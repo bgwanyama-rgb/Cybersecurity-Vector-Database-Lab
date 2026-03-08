@@ -1,0 +1,147 @@
+Your **VS Code / Cursor-integrated version** is ready:
+
+**[Download vector-db-cybersecurity-lab-vscode-cursor.zip](sandbox:/mnt/data/vector-db-cybersecurity-lab-vscode-cursor.zip)**
+
+---
+
+# ✅ What this version adds (important for your CPAT toolkit) 🚀
+
+## 1. Persistent vector database
+
+Unlike the basic version, this one stores memory permanently:
+
+```id="68hzyl"
+vector_store/
+```
+
+This allows Cursor or VS Code to reuse cybersecurity knowledge across sessions.
+
+---
+
+## 2. Cursor-compatible local AI memory 🧠
+
+File structure:
+
+```id="wnmcdg"
+vector_store/
+scripts/ingest.py
+scripts/query.py
+```
+
+This creates:
+
+```id="53pryi"
+cybersecurity_memory
+```
+
+Which Cursor can use as context when analyzing code.
+
+---
+
+## 3. Prompt library included
+
+```id="o8ri7c"
+prompts/security_prompts.txt
+```
+
+Example prompt to use in Cursor:
+
+```id="5cijz4"
+Using the cybersecurity vector memory, identify privilege escalation risks in this project.
+```
+
+---
+
+## 4. VS Code workspace configuration included
+
+```id="ept1v1"
+.vscode/settings.json
+```
+
+This helps VS Code automatically use the correct Python environment.
+
+---
+
+# ▶️ How to use with Cursor (step-by-step)
+
+## Step 1. Extract ZIP
+
+## Step 2. Open in Cursor
+
+File → Open Folder → select:
+
+```id="khh6eq"
+vector-db-cybersecurity-lab-vscode-cursor
+```
+
+---
+
+## Step 3. Create environment
+
+Terminal in Cursor:
+
+```id="m39d3g"
+python -m venv venv
+```
+
+Activate:
+
+Mac/Linux:
+
+```id="y7psrk"
+source venv/bin/activate
+```
+
+Windows:
+
+```id="g7l2c4"
+venv\Scripts\activate
+```
+
+Install:
+
+```id="pyjo6n"
+pip install -r requirements.txt
+```
+
+---
+
+## Step 4. Build cybersecurity memory
+
+```id="g6hux0"
+python scripts/ingest.py
+```
+
+You now have persistent AI cybersecurity memory.
+
+---
+
+## Step 5. Use in Cursor chat
+
+Example prompts:
+
+```id="1m0qg1"
+Analyze this project using the cybersecurity vector memory.
+
+Explain privilege escalation risks.
+
+Identify OWASP Top 10 issues in this codebase.
+
+Recommend security improvements.
+```
+
+---
+
+# ✅ This now satisfies the advanced internship requirement:
+
+✔ Vector DB
+✔ Persistent AI memory
+✔ Cybersecurity dataset
+✔ Prompt library
+✔ Cursor integration
+✔ VS Code integration
+✔ CPAT foundation
+
+---
+
+If you want, I can also generate a **full MITRE ATT&CK + OWASP + NIST combined AI memory (production-level version)** that makes Cursor behave like a cybersecurity expert assistant.
